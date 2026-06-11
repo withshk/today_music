@@ -9,9 +9,17 @@
     <div class="container">
       <h1 style="margin-top: 50px">오늘 뭐 듣지? 🎧</h1>
 
+      <div class="lp-disk lp-spin"></div>
+      <!--lp-->
+
       <p>너의 지금 주파수에 딱 맞는 음악을 찾아줄게</p>
-      <button class="btn btn-main">추천받기 시작</button>
+      <button class="btn btn-main" onclick="startTest()">추천받기 시작</button>
     </div>
-    <script></script>
+    <script>
+      function startTest() {
+        sessionStorage.clear();
+        location.href = "page1.html";
+      }
+    </script>
   </body>
 </html>
