@@ -80,6 +80,25 @@ p {
   background-color: #1ed760;
 }
 
+.btn-login {
+  background: transparent;
+  color: #a0a0a0;
+  border: 1px solid #333333;
+  padding: 12px;
+  font-size: 14px;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-login:hover {
+  color: white;
+  border-color: #1db954;
+  background-color: #282828;
+}
+
 .lp-spin {
   animation: spin 3s linear infinite;
 }
