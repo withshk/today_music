@@ -2,10 +2,36 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <title>질문 2 - 기분</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <title>질문 2</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
   </head>
   <body>
-    <script></script>
+    <div class="container">
+      <div class="progress-container">
+        <div class="progress-bar" style="width: 40%"></div>
+      </div>
+      <h2>지금 너의 기분은 어때?</h2>
+      <button class="btn" onclick="saveAndGo('mood', 'excited')">
+        🔥 완전 신나! 텐션 최고조
+      </button>
+      <button class="btn" onclick="saveAndGo('mood', 'calm')">
+        ☕ 그냥 차분하고 평온해
+      </button>
+      <button class="btn" onclick="saveAndGo('mood', 'sad')">
+        💧 조금 지치고 우울해
+      </button>
+      <button class="btn" onclick="saveAndGo('mood', 'angry')">
+        😡 스트레스 팍팍 받아
+      </button>
+      <button class="btn" onclick="saveAndGo('mood', 'romantic')">
+        💖 뭔가 몽글몽글 설레
+      </button>
+    </div>
+    <script>
+      function saveAndGo(k, v) {
+        sessionStorage.setItem(k, v);
+        location.href = "page3.html";
+      }
+    </script>
   </body>
 </html>

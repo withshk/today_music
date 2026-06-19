@@ -2,10 +2,36 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <title>질문 3 - 동행자</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <title>질문 3</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
   </head>
   <body>
-    <script></script>
+    <div class="container">
+      <div class="progress-container">
+        <div class="progress-bar" style="width: 60%"></div>
+      </div>
+      <h2>누구랑 같이 들을 거야?</h2>
+      <button class="btn" onclick="saveAndGo('companion', 'alone')">
+        🎧 나 혼자 이어폰 끼고
+      </button>
+      <button class="btn" onclick="saveAndGo('companion', 'friends')">
+        🔊 친구들이랑 왁자지껄
+      </button>
+      <button class="btn" onclick="saveAndGo('companion', 'lover')">
+        💕 연인과 오붓하게
+      </button>
+      <button class="btn" onclick="saveAndGo('companion', 'family')">
+        👨‍👩‍👧‍👦 가족들과 다 함께
+      </button>
+      <button class="btn" onclick="saveAndGo('companion', 'pet')">
+        🐾 귀여운 반려동물과
+      </button>
+    </div>
+    <script>
+      function saveAndGo(k, v) {
+        sessionStorage.setItem(k, v);
+        location.href = "page4.html";
+      }
+    </script>
   </body>
 </html>

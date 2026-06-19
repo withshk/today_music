@@ -2,13 +2,13 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <title>질문 1 - 날씨</title>
+    <title>질문 1</title>
     <link rel="stylesheet" href="../CSS/style.css" />
   </head>
   <body>
     <div class="container">
       <div class="progress-container">
-        <div class="progress-bar" style="width: 33%"></div>
+        <div class="progress-bar" style="width: 20%"></div>
       </div>
       <h2>지금 창밖의 날씨는 어때?</h2>
       <button class="btn" onclick="saveAndGo('weather', 'sunny')">
@@ -20,12 +20,17 @@
       <button class="btn" onclick="saveAndGo('weather', 'cloudy')">
         ☁️ 흐리고 선선해
       </button>
+      <button class="btn" onclick="saveAndGo('weather', 'snowy')">
+        ❄️ 펑펑 눈이 와
+      </button>
+      <button class="btn" onclick="saveAndGo('weather', 'windy')">
+        🌬️ 바람이 매섭게 불어
+      </button>
     </div>
-
     <script>
-      function saveAndGo(key, value) {
-        sessionStorage.setItem(key, value); // 데이터 저장
-        location.href = "page2.html"; // 2화면으로 이동
+      function saveAndGo(k, v) {
+        sessionStorage.setItem(k, v);
+        location.href = "page2.html";
       }
     </script>
   </body>

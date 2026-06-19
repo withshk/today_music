@@ -2,10 +2,39 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <title>질문 1 - 맞춤 플리 결과</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <title>맞춤 플레이리스트 결과</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
   </head>
   <body>
+    <div class="container">
+      <h2 style="color: #1db954; font-size: 20px">
+        너를 위한 맞춤 추천 플레이리스트
+      </h2>
+
+      <iframe
+        class="album-cover"
+        id="result-video"
+        src=""
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+      ></iframe>
+
+      <h1
+        id="result-title"
+        style="color: white; font-size: 24px; margin-bottom: 5px"
+      >
+        분석 중...
+      </h1>
+      <p id="result-artist" style="color: #1db954; font-size: 16px">
+        분석 중...
+      </p>
+
+      <button class="btn btn-main" onclick="location.href = 'index.html'">
+        처음부터 다시하기
+      </button>
+    </div>
+
     <script src="../JS/result.js"></script>
   </body>
 </html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>질문 5</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="progress-container">
+        <div class="progress-bar" style="width: 100%"></div>
+      </div>
+      <h2>어디서 듣고 있어?</h2>
+      <button class="btn" onclick="saveAndGo('place', 'bed')">
+        🛏️ 내 방 침대 위
+      </button>
+      <button class="btn" onclick="saveAndGo('place', 'cafe')">
+        ☕ 분위기 좋은 카페
+      </button>
+      <button class="btn" onclick="saveAndGo('place', 'walk')">
+        🚶 이어폰 꽂고 산책 중
+      </button>
+      <button class="btn" onclick="saveAndGo('place', 'drive')">
+        🚗 신나는 드라이브 중
+      </button>
+      <button class="btn" onclick="saveAndGo('place', 'gym')">
+        🏋️ 땀 흘리는 헬스장
+      </button>
+    </div>
+    <script>
+      function saveAndGo(k, v) {
+        sessionStorage.setItem(k, v);
+        location.href = "result.html";
+      }
+    </script>
+  </body>
+</html>
