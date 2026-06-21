@@ -10,6 +10,15 @@
       <h1 style="margin-top: 50px">오늘 뭐 듣지? 🎧</h1>
 
       <p>너의 지금 주파수에 딱 맞는 음악을 찾아줄게</p>
+
+      <div class="album-shuffle-container">
+        <img
+          id="shuffle-image"
+          src="../image/bubble gum.png"
+          alt="랜덤 앨범 커버"
+        />
+      </div>
+
       <button class="btn btn-main" onclick="startTest()">추천받기 시작</button>
       <button class="btn-login">로그인 / 회원가입</button>
     </div>
@@ -18,6 +27,45 @@
         sessionStorage.clear();
         location.href = "page1.html";
       }
+      const coverImages = [
+        "너에게 쓰는 편지 2.png",
+        "너에게 쓰는 편지.png",
+        "너에게 주고 싶은 세가지.png",
+        "마음.png",
+        "모닝 왈츠.png",
+        "미안해 널 미워해.png",
+        "비 갠 후에.png",
+        "삐딱하게.png",
+        "오렌지 마말레이드.png",
+        "우나사빠.png",
+        "우산.png",
+        "좋지 아니한가.png",
+        "주문을 걸어.png",
+        "주저하는 연인들을 위해.png",
+        "편지.png",
+        "홀로봄.png",
+        "antifreeze.png",
+        "bubble gum.png",
+        "double take.png",
+        "everything.png",
+        "faking all the moves.png",
+        "heroine.png",
+        "les champs elysees.png",
+        "rainy day.png",
+        "reality blue.png",
+        "umbrella.png",
+      ];
+
+      const shuffleImgEl = document.getElementById("shuffle-image");
+
+      // 3. 0.6초(600ms)마다 이미지를 랜덤으로 바꿔주는 타이머 함수
+      setInterval(function () {
+        // 0부터 26(이미지 개수-1) 사이의 랜덤 숫자 뽑기
+        const randomIndex = Math.floor(Math.random() * coverImages.length);
+
+        // 이미지 경로를 랜덤으로 뽑은 파일 이름으로 덮어쓰기
+        shuffleImgEl.src = "../image/" + coverImages[randomIndex];
+      }, 1000); // 600을 줄이면 더 빨리 넘어가고, 늘리면 더 천천히 넘어갑니다.
     </script>
   </body>
 </html>

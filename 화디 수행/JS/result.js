@@ -56,12 +56,6 @@ const songDatabase = [
     youtubeId: "IYOfGK5Zos4",
   },
   {
-    title: "자살소년",
-    artist: "초록불꽃소년단",
-    tags: ["sunny", "sad", "friends", "night", "walk"],
-    youtubeId: "vvP6u_V3YPk",
-  },
-  {
     title: "오렌지 마말레이드",
     artist: "자우림",
     tags: ["sunny", "sad", "lover", "evening", "cafe"],
