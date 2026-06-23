@@ -58,14 +58,14 @@
 
       const shuffleImgEl = document.getElementById("shuffle-image");
 
-      // 3. 0.6초(600ms)마다 이미지를 랜덤으로 바꿔주는 타이머 함수
+      // 3. 1초(1000ms)마다 이미지를 랜덤으로 바꿔주는 타이머 함수
       setInterval(function () {
-        // 0부터 26(이미지 개수-1) 사이의 랜덤 숫자 뽑기
+        // 0부터 25(이미지 개수-1) 사이의 랜덤 숫자 뽑기
         const randomIndex = Math.floor(Math.random() * coverImages.length);
 
         // 이미지 경로를 랜덤으로 뽑은 파일 이름으로 덮어쓰기
         shuffleImgEl.src = "../image/" + coverImages[randomIndex];
-      }, 1000); // 600을 줄이면 더 빨리 넘어가고, 늘리면 더 천천히 넘어갑니다.
+      }, 1000);
     </script>
   </body>
 </html>

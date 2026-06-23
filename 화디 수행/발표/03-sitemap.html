@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>02 사이트 정보 구조</title>
+    <link rel="stylesheet" href="../assets/shared.css" />
+  </head>
+  <body>
+    <div
+      class="slide-container"
+      data-screen-label="03 Sitemap"
+      style="
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #0e0e0e;
+      "
+    >
+      <div data-object="true" data-object-type="textbox" class="slide-num">
+        02 / 08
+      </div>
+      <div data-object="true" data-object-type="textbox" class="slide-title">
+        사이트 정보 구조
+      </div>
+      <div data-object="true" data-object-type="textbox" class="slide-sub">
+        선형 흐름 7단계 — 다섯 번의 선택이 한 곡으로 수렴한다
+      </div>
+      <div data-object="true" data-object-type="shape" class="rule"></div>
+
+      <!-- 진행 선 -->
+      <div
+        data-object="true"
+        data-object-type="shape"
+        style="
+          position: absolute;
+          left: 60px;
+          top: 430px;
+          width: 1800px;
+          height: 6px;
+          background: linear-gradient(
+            90deg,
+            #1db954 0%,
+            #1db954 86%,
+            #2a2a2a 100%
+          );
+          border-radius: 3px;
+          z-index: 2;
+        "
+      ></div>
+
+      <!-- 노드 7개: width 240, gap 16 -->
+      <!-- A 홈 -->
+      <div
+        data-object="true"
+        data-object-type="shape"
+        style="
+          position: absolute;
+          left: 80px;
+          top: 340px;
+          width: 240px;
+          height: 200px;
+          background: #181818;
+          border: 2px solid #1db954;
+          border-radius: 20px;
+          z-index: 5;
+        "
+      ></div>
+      <div
+        data-object="true"
+        data-object-type="textbox"
+        style="
+          position: absolute;
+          left: 80px;
+          top: 358px;
+          width: 240px;
+          text-align: center;
+          z-index: 10;
+        "
+      >
+        <div
+          style="
+            font-size: 12px;
+            color: #1db954;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            margin-bottom: 4px;
+          "
+        >
+          A · 홈
+        </div>
+        <div style="font-size: 42px; line-height: 1; margin: 10px 0 6px">
+          🎧
+        </div>
+        <div style="font-size: 15px; color: #fff; font-weight: 600">
+          시작 화면
+        </div>
+        <div
+          style="
+            font-size: 11px;
+            color: #6a6a6a;
+            margin-top: 4px;
+            font-family: monospace;
+          "
+        >
+          index.html
+        </div>
+      </div>
+
+      <!-- B 날씨 -->
+      <div
+        data-object="true"
+        data-object-type="shape"
+        style="
+          position: absolute;
+          left: 336px;
+          top: 340px;
+          width: 240px;
+          height: 200px;
+          background: #181818;
+          border: 1px solid #2a2a2a;
+          border-radius: 20px;
+          z-index: 5;
+        "
+      ></div>
+      <div
+        data-object="true"
+        data-object-type="textbox"
+        style="
+          position: absolute;
+          left: 336px;
+          top: 358px;
+          width: 240px;
+          text-align: center;
+          z-index: 10;
+        "
+      >
+        <div
+          style="
+            font-size: 12px;
+            color: #1db954;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            margin-bottom: 4px;
+          "
+        >
+          B · 1화면
+        </div>
+        <div style="font-size: 42px; line-height: 1; margin: 10px 0 6px">
+          ☀️
+        </div>
+        <div style="font-size: 15px; color: #fff; font-weight: 600">날씨</div>
+        <div
+          style="
+            font-size: 11px;
+            color: #6a6a6a;
+            margin-top: 4px;
+            font-family: monospace;
+          "
+        >
+          page1.html
+        </div>
+      </div>
+
+      <!-- C 기분 -->
+      <div
+        data-object="true"
+        data-object-type="shape"
+        style="
+          position: absolute;
+          left: 592px;
+          top: 340px;
+          width: 240px;
+          height: 200px;
+          background: #181818;
+          border: 1px solid #2a2a2a;
+          border-radius: 20px;
+          z-index: 5;
+        "
+      ></div>
+      <div
+        data-object="true"
+        data-object-type="textbox"
+        style="
+          position: absolute;
+          left: 592px;
+          top: 358px;
+          width: 240px;
+          text-align: center;
+          z-index: 10;
+        "
+      >
+        <div
+          style="
+            font-size: 12px;
+            color: #1db954;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            margin-bottom: 4px;
+          "
+        >
+          C · 2화면
+        </div>
+        <div style="font-size: 42px; line-height: 1; margin: 10px 0 6px">
+          ☕
+        </div>
+        <div style="font-size: 15px; color: #fff; font-weight: 600">기분</div>
+        <div
+          style="
+            font-size: 11px;
+            color: #6a6a6a;
+            margin-top: 4px;
+            font-family: monospace;
+          "
+        >
+          page2.html
+        </div>
+      </div>
+
+      <!-- D 동행자 -->
+      <div
+        data-object="true"
+        data-object-type="shape"
+        style="
+          position: absolute;
+          left: 848px;
+          top: 340px;
+          width: 240px;
+          height: 200px;
+          background: #181818;
+          border: 1px solid #2a2a2a;
+          border-radius: 20px;
+          z-index: 5;
+        "
+      ></div>
+      <div
+        data-object="true"
+        data-object-type="textbox"
+        style="
+          position: absolute;
+          left: 848px;
+          top: 358px;
+          width: 240px;
+          text-align: center;
+          z-index: 10;
+        "
+      >
+        <div
+          style="
+            font-size: 12px;
+            color: #1db954;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            margin-bottom: 4px;
+          "
+        >
+          D · 3화면
+        </div>
+        <div style="font-size: 42px; line-height: 1; margin: 10px 0 6px">
+          💕
+        </div>
+        <div style="font-size: 15px; color: #fff; font-weight: 600">동행자</div>
+        <div
+          style="
+            font-size: 11px;
+            color: #6a6a6a;
+            margin-top: 4px;
+            font-family: monospace;
+          "
+        >
+          page3.html
+        </div>
+      </div>
+
+      <!-- E 시간대 -->
+      <div
+        data-object="true"
+        data-object-type="shape"
+        style="
+          position: absolute;
+          left: 1104px;
+          top: 340px;
+          width: 240px;
+          height: 200px;
+          background: #181818;
+          border: 1px solid #2a2a2a;
+          border-radius: 20px;
+          z-index: 5;
+        "
+      ></div>
+      <div
+        data-object="true"
+        data-object-type="textbox"
+        style="
+          position: absolute;
+          left: 1104px;
+          top: 358px;
+          width: 240px;
+          text-align: center;
+          z-index: 10;
+        "
+      >
+        <div
+          style="
+            font-size: 12px;
+            color: #1db954;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            margin-bottom: 4px;
+          "
+        >
+          E · 4화면
+        </div>
+        <div style="font-size: 42px; line-height: 1; margin: 10px 0 6px">
+          🌃
+        </div>
+        <div style="font-size: 15px; color: #fff; font-weight: 600">시간대</div>
+        <div
+          style="
+            font-size: 11px;
+            color: #6a6a6a;
+            margin-top: 4px;
+            font-family: monospace;
+          "
+        >
+          page4.html
+        </div>
+      </div>
+
+      <!-- F 장소 -->
+      <div
+        data-object="true"
+        data-object-type="shape"
+        style="
+          position: absolute;
+          left: 1360px;
+          top: 340px;
+          width: 240px;
+          height: 200px;
+          background: #181818;
+          border: 1px solid #2a2a2a;
+          border-radius: 20px;
+          z-index: 5;
+        "
+      ></div>
+      <div
+        data-object="true"
+        data-object-type="textbox"
+        style="
+          position: absolute;
+          left: 1360px;
+          top: 358px;
+          width: 240px;
+          text-align: center;
+          z-index: 10;
+        "
+      >
+        <div
+          style="
+            font-size: 12px;
+            color: #1db954;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            margin-bottom: 4px;
+          "
+        >
+          F · 5화면
+        </div>
+        <div style="font-size: 42px; line-height: 1; margin: 10px 0 6px">
+          ☕
+        </div>
+        <div style="font-size: 15px; color: #fff; font-weight: 600">장소</div>
+        <div
+          style="
+            font-size: 11px;
+            color: #6a6a6a;
+            margin-top: 4px;
+            font-family: monospace;
+          "
+        >
+          page5.html
+        </div>
+      </div>
+
+      <!-- G 결과 -->
+      <div
+        data-object="true"
+        data-object-type="shape"
+        style="
+          position: absolute;
+          left: 1616px;
+          top: 340px;
+          width: 240px;
+          height: 200px;
+          background: #181818;
+          border: 2px solid #1db954;
+          border-radius: 20px;
+          box-shadow: 0 0 36px rgba(29, 185, 84, 0.3);
+          z-index: 5;
+        "
+      ></div>
+      <div
+        data-object="true"
+        data-object-type="textbox"
+        style="
+          position: absolute;
+          left: 1616px;
+          top: 358px;
+          width: 240px;
+          text-align: center;
+          z-index: 10;
+        "
+      >
+        <div
+          style="
+            font-size: 12px;
+            color: #1db954;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            margin-bottom: 4px;
+          "
+        >
+          G · 결과
+        </div>
+        <div style="font-size: 42px; line-height: 1; margin: 10px 0 6px">
+          💿
+        </div>
+        <div style="font-size: 15px; color: #fff; font-weight: 600">
+          YouTube 재생
+        </div>
+        <div
+          style="
+            font-size: 11px;
+            color: #6a6a6a;
+            margin-top: 4px;
+            font-family: monospace;
+          "
+        >
+          result.html
+        </div>
+      </div>
+
+      <!-- 다시하기 메모 -->
+      <div
+        data-object="true"
+        data-object-type="textbox"
+        style="
+          position: absolute;
+          left: 60px;
+          top: 560px;
+          width: 1800px;
+          text-align: center;
+          z-index: 10;
+        "
+      >
+        <div style="font-size: 14px; color: #6a6a6a; letter-spacing: 0.06em">
+          ↺ 다시하기 — G에서 A로 회귀 (sessionStorage 초기화)
+        </div>
+      </div>
+
+      <!-- 흐름 설명 -->
+      <div
+        data-object="true"
+        data-object-type="textbox"
+        style="
+          position: absolute;
+          left: 60px;
+          top: 680px;
+          width: 1800px;
+          z-index: 10;
+        "
+      >
+        <div
+          style="
+            font-size: 20px;
+            color: #1db954;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            margin-bottom: 18px;
+          "
+        >
+          ▌화면 간 이동 흐름
+        </div>
+        <div
+          style="
+            background: #181818;
+            border: 1px solid #232323;
+            border-radius: 18px;
+            padding: 30px 36px;
+            font-size: 20px;
+            color: #d8d8d8;
+            line-height: 1.8;
+          "
+        >
+          홈에서
+          <span style="color: #1db954; font-weight: 600"
+            >[추천받기 시작] 클릭</span
+          >
+          → 1화면 날씨 선택 시 값 저장 후 자동 이동 → 같은 방식으로 기분 ·
+          동행자 · 시간대 · 장소까지 5개 답을 누적 저장 → 결과 화면에서
+          <span style="color: #1db954; font-weight: 600"
+            >30곡 전체와 태그 점수 비교 → 최고점 곡 표시</span
+          >
+          → 다시하기 클릭 시 sessionStorage 초기화 후 홈으로 복귀
+        </div>
+      </div>
+
+      <div data-object="true" data-object-type="textbox" class="footer-brand">
+        오늘 뭐 듣지? · 주현욱
+      </div>
+      <div data-object="true" data-object-type="textbox" class="footer-page">
+        02
+      </div>
+    </div>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447"
+      integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ=="
+      data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
