@@ -142,6 +142,7 @@ p {
 }
 
 @keyframes floatBounce {
+  /* 앨범 플로트 */
   0%,
   100% {
     transform: translateY(0);
